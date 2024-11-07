@@ -1,0 +1,136 @@
+.container {
+    min-height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.hamburger-header {
+    width: fit-content;
+    background-color: red;
+    padding: 2rem;
+    color: white;
+}
+
+.burger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-upper-bun {
+    width: 24rem;
+    height: 6rem;
+    background-color: #deb787;
+    border-radius: 4rem 4rem 1rem 1rem;
+    display: flex;
+    overflow: clip;
+    align-items: flex-end;
+}
+
+.burger-upper-bun__shadow {
+    width: 100%;
+    height: 1rem;
+    background-color: #d1a15f;
+}
+
+.cheese {
+    width: 26rem;
+    height: 1rem;
+    background-color: #fed702;
+    display: flex;
+    overflow: clip;
+    align-items: flex-end;
+}
+
+.cheese_shadow {
+    width: 100%;
+    height: 0.25rem;
+    background-color: #e2af1a;
+}
+
+.tomato {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #ff0000;
+    display: flex;
+    overflow: clip;
+    align-items: flex-end;
+}
+
+.tomato_shadow {
+    width: 100%;
+    height: 0.25rem;
+    background-color: #db193c;
+}
+
+.burger {
+    width: 22rem;
+    height: 2rem;
+    background-color: #cc6533;
+    display: flex;
+    overflow: clip;
+    align-items: flex-end;
+    border-radius: 1rem;
+}
+
+.burger_shadow {
+    width: 100%;
+    height: 0.25rem;
+    background-color: #983201;
+}
+
+.onion {
+    width: 18rem;
+    height: 2rem;
+    background-color: #800080;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.onion_pattern {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #dda1dd;
+}
+
+.meat-ball__container {
+    width: 16rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.meat-ball {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: #a5292a;
+}
+
+.cucumber {
+    width: 18rem;
+    height: 2rem;
+    background-color: #8fef8f;
+    border-radius: 0 0 10rem 10rem;
+    border-bottom: 1.5rem solid #008001;
+}
+
+.burger-bottom-bun {
+    width: 24rem;
+    height: 3rem;
+    background-color: #deb787;
+    border-radius: 1rem 1rem 4rem 4rem;
+    display: flex;
+    overflow: clip;
+    align-items: flex-start;
+}
+
+.burger-bottom-bun__shadow {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #d1a15f;
+}
