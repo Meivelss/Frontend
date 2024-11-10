@@ -1,67 +1,113 @@
 .container {
-    min-height: 100vh;
-    border: 1px solid red;
-    padding: 0 2rem 0 2rem;
+  min-height: 100vh;
+  border: 1px solid red;
+  padding: 0 2rem 0 2rem;
 }
 
 .main-header {
-    color: darkorange;
-    font-size: xx-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  color: darkorange;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.row {
-    display: flex;
-    gap: 2rem;
+input {
+  border: 1px solid lightslategray;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 1px solid darkorange;
+  outline: none;
+}
+
+.row, .row__buton {
+  display: flex;
+  gap: 2rem;
 }
 
 .personal-form {
-    color: darkorange;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: small;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  max-width: 50rem;
+  color: darkorange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.personal-form input:focus {
+  background-color: rgb(236, 236, 236);
+}
+
+.personal-form label {
+  font-weight: bold;
 }
 
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .form > input, .form > select {
-    min-height: 2rem;
-    box-sizing: border-box;
-    display: flex;
-    padding-left: 1rem;
+  min-height: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  padding-left: 1rem;
 }
 
-.checkboxes {
-    color: black;
-    display: flex;
-    justify-content: space-evenly;
+.checkboxes, .radios {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  border: none;
 }
 
-.checkboxes>input {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 100%;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: 2px solid gray;
-    cursor: pointer;
+.radios label, .checkboxes label  {
+  font-weight: normal;
 }
 
-.round-checkbox-label span {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid #555;
-    display: inline-block;
-    position: relative;
-    margin-right: 8px;
-    transition: background-color 0.2s;
+.form textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 1rem;
+  outline: darkorange;
+  min-height: 10rem;
+  resize: none;
+}
+
+.personal-form button {
+  display: flex;
+  justify-content: center;
+  background-color: darkorange;
+  border: none;
+  color: white;
+  font-size: x-large;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .personal-form {
+    gap: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .row__buton {
+    gap: 1rem;
+  }
+
+  .personal-form button {
+    font-size: medium;
+    padding: 0.5rem 2rem;
+  }
+
+  .checkboxes, .radios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
