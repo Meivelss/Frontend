@@ -12,13 +12,58 @@
         Employment Form
     </h1>
     <form class="personal-form">
-      <div class="form">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+      <div class="row">
+        <div class="form">
+          <label for="fname">First name</label>
+          <input name="fname" id="fname" type="text" required placeholder="Jan">
+        </div>
+        <div class="form">
+          <label for="lname">Last name</label>
+          <input name="lname" id="lname" type="text" required placeholder="Kowalski">  
+        </div>
       </div>
-      <div class="form">
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
+      <div class="row">
+        <div class="form">
+          <label for="email">E-mail</label>
+          <input name="email" id="email" type="email" required placeholder="jk@gmail.com">
+        </div>
+        <div class="form">
+          <label for="email">Phone</label>
+          <input name="phone" id="phone" type="tel" required placeholder="505 505 505">
+        </div>
+        <div class="form">
+          <label for="email">Date of birth</label>
+          <input name="dbirth" id="dbirth" type="date" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form">
+          <label for="gender">Gender</label>
+          <select class="form" name="gender" id="gender">
+            <option value="" disabled selected></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form">
+          <label>What are you looking for</label>
+          <div class="checkboxes">
+            <input type="checkbox" id="job1" name="job1" value="se">
+            <span></span>
+            <label for="job1">Software Engineer</label><br>
+            <input type="checkbox" id="job2" name="job2" value="ux">
+            <span></span>
+            <label for="job2">UX Designer</label><br>
+            <input type="checkbox" id="job3" name="job3" value="as">
+            <span></span>
+            <label for="job3">Analytics Specialist</label>
+            <input type="checkbox" id="job4" name="job4" value="pm">
+            <span></span>
+            <label for="job4">Project Manager</label>
+          </div>
+        </div>
       </div>
     </form>
   </div>
