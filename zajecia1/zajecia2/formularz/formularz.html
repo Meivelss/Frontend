@@ -8,10 +8,10 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="main-header">
-        Employment Form
-    </h1>
     <form class="personal-form">
+      <h1 class="main-header">
+          Employment Form
+      </h1>
       <div class="row">
         <div class="form">
           <label for="fname">First name</label>
@@ -39,7 +39,7 @@
       <div class="row">
         <div class="form">
           <label for="gender">Gender</label>
-          <select class="form" name="gender" id="gender">
+          <select name="gender" id="gender">
             <option value="" disabled selected></option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -48,22 +48,67 @@
       </div>
       <div class="row">
         <div class="form">
-          <label>What are you looking for</label>
-          <div class="checkboxes">
-            <input type="checkbox" id="job1" name="job1" value="se">
-            <span></span>
-            <label for="job1">Software Engineer</label><br>
-            <input type="checkbox" id="job2" name="job2" value="ux">
-            <span></span>
-            <label for="job2">UX Designer</label><br>
-            <input type="checkbox" id="job3" name="job3" value="as">
-            <span></span>
-            <label for="job3">Analytics Specialist</label>
-            <input type="checkbox" id="job4" name="job4" value="pm">
-            <span></span>
-            <label for="job4">Project Manager</label>
-          </div>
+          <label>What are you looking for?</label>
+          <fieldset class="radios">
+            <div>
+              <input type="radio" id="se" name="job" value="se" required>
+              <label for="se">Software Engineer</label>
+            </div>
+            <div>
+              <input type="radio" id="ux" name="job" value="ux">
+              <label for="ux">UX Designer</label>
+            </div>
+            <div>
+              <input type="radio" id="as" name="job" value="as">
+              <label for="as">Analytics Specialist</label>
+            </div>
+            <div>
+              <input type="radio" id="pm" name="job" value="pm">
+              <label for="pm">Project Manager</label>
+            </div>
+          </fieldset>
         </div>
+      </div>
+      <div class="row">
+        <div class="form">
+          <label>Which programming languages do you know?</label>
+          <fieldset class="checkboxes">
+            <div>
+              <input type="checkbox" id="java" name="java" value="java" required>
+              <label for="java">Java</label>
+            </div>
+            <div>
+              <input type="checkbox" id="js" name="js" value="js">
+              <label for="js">JavaScript</label>
+            </div>
+            <div>
+              <input type="checkbox" id="dotnet" name="dotnet" value="dotnet">
+              <label for="dotnet">C#</label>
+            </div>
+            <div>
+              <input type="checkbox" id="kotlin" name="kotlin" value="kotlin">
+              <label for="kotlin">Kotlin</label>
+            </div>
+            <div>
+              <input type="checkbox" id="python" name="python" value="python">
+              <label for="python">Python</label>
+            </div>
+            <div>
+              <input type="checkbox" id="scala" name="scala" value="scala">
+              <label for="scala">Scala</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form">
+          <label>Message</label>
+          <textarea id="message" placeholder="Type your message"></textarea>
+        </div>
+      </div>
+      <div class="row__buton">
+        <button id="reset" style="flex-grow: 1;">Reset</button>
+        <button id="submit" style="flex-grow: 3;">Submit</button>
       </div>
     </form>
   </div>
